@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP8266 Deauther</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    animation: fadeIn 1.2s ease-in-out;
+    max-width: 90%; /* ограничение ширины на мобильных */
+  }
+
+  h1 {
+    margin: 0 0 15px;
+    font-size: 28px;
+    color: #00ffc8;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #111;
+    background: #00ffc8;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    background: #00cc9e;
+    transform: scale(1.05);
+  }
+
+  .secret {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .secret:hover {
+    color: #00ffc8;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Медиазапрос для мобильных устройств */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 20px 25px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    .secret {
+      font-size: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>— WELCOME —</h1>
+    <p>To see the miracle, connect to the internet and press the button</p>
+    <a href="https://www.youtube.com/watch?v=nmjyKYS5Efk" class="btn">Click Me!</a>
+  </div>
+  <div class="secret" onclick="goToScan()">Powered by WADPH</div>
+  <script>
+    function goToScan() {
+      window.location.href = "scan.html";
+    }
+  </script>
+</body>
+</html>
