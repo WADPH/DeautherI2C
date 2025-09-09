@@ -8,6 +8,13 @@
 ## Notes
 Deleted all of non used Configs in A_config.h 
 
+## Display Guide
+### ESP8266 — I2C
+1. 3V3 — VCC
+2. D1 — SLA
+3. D2 — SCL
+4. GND — GND
+
 ## Original Files (Repos)
 SpacehuhnTech — https://github.com/SpacehuhnTech/esp8266_deauther<br>
 wh1ter0z — https://github.com/wh1ter0z/esp8266_deauther
